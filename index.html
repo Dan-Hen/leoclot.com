@@ -1,17 +1,311 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Front-end Boilerplate by Malo Widerspach</title>
-  <link rel="stylesheet" href="./src/style.scss">
-</head>
-<body>
-  <div>
-    <h1>Hello World :)</h1>
-    <a href="https://mowh.fr/">mowh.fr</a>
-  </div>
-  <script src="./src/main.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./src/style.scss">
+  </head>
+  <body id="home" data-barba="wrapper">
+    <nav>
+      <h3 class="logo">
+        <a href="index.html" class="hoverable">LEO CLOT</a>
+      </h3>
+      <a id="nav-toggle" class="hoverable" href="menu.html">
+        <h3 id="nav-toggle-text">
+          MENU
+        </h3>
+      </a>
+    </nav>
+
+    <div class="cursor">
+      <div class="cursor__ball cursor__ball--small">
+        <svg height="10" width="10">
+          <circle cx="5" cy="5" r="4" stroke-width="0"></circle>
+        </svg>
+      </div>
+    </div>
+
+
+    <main data-barba="container" data-barba-namespace="home">
+      <div class="homepage-container">
+        <div class="homepage-title">
+          <h1 class="header-text">
+            Student at Gobelins, Paris.<br>
+            This is a showcase
+            <svg id="light" class="icon-md fadeIn hoverable" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 57.39 55.81">
+              <rect x="43" y="16.3" width="4" height="57.39" transform="translate(-28.03 -0.94) rotate(-18.05)" />
+              <rect x="43" y="16.3" width="4" height="57.39" transform="translate(-34.28 37.09) rotate(-53.3)" />
+              <rect y="25.9" width="57.39" height="4" />
+              <rect x="16.3" y="43" width="57.39" height="4" transform="translate(-34.27 18.68) rotate(-36.66)" />
+              <rect x="16.3" y="43" width="57.39" height="4" transform="translate(-28.04 56.73) rotate(-71.94)" />
+            </svg>
+            of immersive experience
+            <svg class="icon-md fadeIn" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 57.64 42.62">
+              <path
+                d="M45.06,66.31h-.12A40.4,40.4,0,0,1,16.18,54.4L19,51.57A36.4,36.4,0,0,0,44.94,62.31h.12A36.4,36.4,0,0,0,71,51.57l2.83,2.83A40.4,40.4,0,0,1,45.06,66.31Z"
+                transform="translate(-16.18 -23.69)"
+              />
+              <path
+                d="M71,38.43A36.4,36.4,0,0,0,45.06,27.69h-.12A36.4,36.4,0,0,0,19,38.43L16.18,35.6A40.4,40.4,0,0,1,44.94,23.69h.12A40.4,40.4,0,0,1,73.82,35.6Z"
+                transform="translate(-16.18 -23.69)"
+              />
+              <circle cx="28.82" cy="21.95" r="6" />
+            </svg>
+            and interface design.
+          </h1>
+
+          <h3 class="homepage-subtitle">
+            <div>
+              <span class="homepage-subtitle fadeIn">
+                And some old projects.
+              </span>
+            </div>
+          </h3>
+        </div>
+
+        <div class="ornament">
+          <svg class="arrow-down fadeIn" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43.41 43.41">
+            <path
+              d="M36.83,56,66.7,26.12l-2.82-2.83L34,53.18A31.24,31.24,0,0,0,35.09,45a30.38,30.38,0,0,0-9-21.65L23.3,26.12a26.55,26.55,0,0,1,7.79,18.93A26.49,26.49,0,0,1,23.3,63.88l2.82,2.83a26.75,26.75,0,0,1,37.76,0l2.82-2.83A30.84,30.84,0,0,0,36.83,56Z"
+              transform="translate(-23.3 -23.29)"
+            />
+          </svg>
+          <h3>
+        <span class="fadeIn">
+          23 YO IMMERSIVE
+          <br />
+          DIGITAL DESIGNER
+        </span>
+          </h3>
+        </div>
+      </div>
+
+      <div class="project-container">
+        <div class="background">
+          <img class="image-section" src="src/img/mirage-static.png" width="100%">
+          <img class="image-section" src="src/img/unnamed.png" width="100%">
+        </div>
+        <ul class="project-list">
+          <li>
+            <a href="mirage.html" class="hover-section" id="0-2">
+              <div class="project">
+                <h2>
+                  <div class="project-title">
+                    <svg id="letter" class="surround" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 266.21 105.91">
+                      <path
+                        class="cls-1"
+                        d="M17.22-112.66C-33.61-97-67.6-72.86-61.78-53.14-53.47-25,35.56-7.91,101.06-22.75,156.49-35.31,200.91-72,186-91.77c-24.47-32.3-216.88-30.69-243.45,7.6C-70.8-65-41.32-38.17-10.19-25.28,52.11.52,155-15.31,173.07-47.44,184.67-68.09,160.8-94.71,129-107,77.57-126.77-11-115.27-75.75-70.87"
+                        transform="translate(76.32 117.31)"
+                      />
+                    </svg>
+                    <span class="fadeInUp">Mirage</span>
+                  </div>
+                </h2>
+                <div class="project-info">
+                  <h3>
+                    <div>
+                      <span class="fadeInUp">LATE 2021</span>
+                    </div>
+                  </h3>
+                  <h3>
+                    <div>
+                      <span class="fadeInUp">IMMERSIVE EXPERIENCE</span>
+                    </div>
+                  </h3>
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <div class="cutline"></div>
+
+          <li>
+            <a href="unnamed.html" class="hover-section" id="1-2">
+              <div class="project">
+                <h2>
+                  <div class="project-title">
+                    <svg class="surround" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 266.21 105.91">
+                      <path
+                        class="cls-1"
+                        d="M17.22-112.66C-33.61-97-67.6-72.86-61.78-53.14-53.47-25,35.56-7.91,101.06-22.75,156.49-35.31,200.91-72,186-91.77c-24.47-32.3-216.88-30.69-243.45,7.6C-70.8-65-41.32-38.17-10.19-25.28,52.11.52,155-15.31,173.07-47.44,184.67-68.09,160.8-94.71,129-107,77.57-126.77-11-115.27-75.75-70.87"
+                        transform="translate(76.32 117.31)"
+                      />
+                    </svg>
+                    <span class="fadeInUp">Unnamed</span>
+                  </div>
+                </h2>
+                <div class="project-info">
+                  <h3>
+                    <div>
+                      <span class="fadeInUp">EARLY 2021</span>
+                    </div>
+                  </h3>
+                  <h3>
+                    <div>
+                      <span class="fadeInUp">SHORT FILM & WEB DESIGN</span>
+                    </div>
+                  </h3>
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <div class="cutline"></div>
+
+          <li>
+            <a href="#" class="hover-section" id="3-2">
+              <div class="project">
+                <h2>
+                  <div class="project-title">
+                    <svg class="surround" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 266.21 105.91">
+                      <path
+                        class="cls-1"
+                        d="M17.22-112.66C-33.61-97-67.6-72.86-61.78-53.14-53.47-25,35.56-7.91,101.06-22.75,156.49-35.31,200.91-72,186-91.77c-24.47-32.3-216.88-30.69-243.45,7.6C-70.8-65-41.32-38.17-10.19-25.28,52.11.52,155-15.31,173.07-47.44,184.67-68.09,160.8-94.71,129-107,77.57-126.77-11-115.27-75.75-70.87"
+                        transform="translate(76.32 117.31)"
+                      />
+                    </svg>
+                    <span class="fadeInUp">Memories</span>
+                  </div>
+                </h2>
+                <div class="project-info">
+                  <h3>
+                    <div>
+                      <span class="fadeInUp">EARLY 2019</span>
+                    </div>
+                  </h3>
+                  <h3>
+                    <div>
+                      <span class="fadeInUp">MOBILE APP</span>
+                    </div>
+                  </h3>
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <div class="cutline"></div>
+
+          <li>
+            <a href="#" class="hover-section" id="4-2">
+              <div class="project">
+                <h2>
+                  <div class="project-title">
+                    <svg class="surround" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 266.21 105.91">
+                      <path
+                        class="cls-1"
+                        d="M17.22-112.66C-33.61-97-67.6-72.86-61.78-53.14-53.47-25,35.56-7.91,101.06-22.75,156.49-35.31,200.91-72,186-91.77c-24.47-32.3-216.88-30.69-243.45,7.6C-70.8-65-41.32-38.17-10.19-25.28,52.11.52,155-15.31,173.07-47.44,184.67-68.09,160.8-94.71,129-107,77.57-126.77-11-115.27-75.75-70.87"
+                        transform="translate(76.32 117.31)"
+                      />
+                    </svg>
+                    <span class="fadeInUp">Godfried</span>
+                  </div>
+                </h2>
+                <div class="project-info">
+                  <h3>
+                    <div>
+                      <span class="fadeInUp">LATE 2020</span>
+                    </div>
+                  </h3>
+                  <h3>
+                    <div>
+                      <span class="fadeInUp">WEB DESIGN & PRODUCT DESIGN</span>
+                    </div>
+                  </h3>
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <div class="cutline"></div>
+
+          <li>
+            <a href="#" class="hover-section" id="5-2">
+              <div class="project">
+                <h2>
+                  <div class="project-title">
+                    <svg id="letter" class="surround" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 266.21 105.91">
+                      <path
+                        class="cls-1"
+                        d="M17.22-112.66C-33.61-97-67.6-72.86-61.78-53.14-53.47-25,35.56-7.91,101.06-22.75,156.49-35.31,200.91-72,186-91.77c-24.47-32.3-216.88-30.69-243.45,7.6C-70.8-65-41.32-38.17-10.19-25.28,52.11.52,155-15.31,173.07-47.44,184.67-68.09,160.8-94.71,129-107,77.57-126.77-11-115.27-75.75-70.87"
+                        transform="translate(76.32 117.31)"
+                      />
+                    </svg>
+                    <span class="fadeInUp">Archive</span>
+                  </div>
+                </h2>
+                <div class="project-info">
+                  <h3>
+                    <div>
+                      <span class="fadeInUp">FROM 2018 TO NOW</span>
+                    </div>
+                  </h3>
+                  <h3>
+                    <div>
+                      <span class="fadeInUp">IMMERSIVE EXPERIENCE AND RESEARCH</span>
+                    </div>
+                  </h3>
+                </div>
+              </div>
+            </a>
+          </li>
+
+        </ul>
+      </div>
+
+      <div class="contact">
+        <h1 class="footer-text">
+          Available for
+          <svg class="icon-md" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56.59 57.71">
+            <path
+              d="M47,43.56a25.47,25.47,0,0,1,7.45-16.43l.07-.07a25.49,25.49,0,0,1,18.15-7.52V15.87a29.15,29.15,0,0,0-20.75,8.59l-.07.07a29.2,29.2,0,0,0-8.54,19H16.52v30h1.84a28,28,0,0,0,20-8.3,27.93,27.93,0,0,0,6.4-9.85,28.44,28.44,0,0,0,6.46,9.92,28,28,0,0,0,19.89,8.23h1.83l.22-30ZM35.65,62.75a24.28,24.28,0,0,1-15.46,7.09V47.23H42.81A24.4,24.4,0,0,1,35.65,62.75Zm33.59,7.09A24.57,24.57,0,0,1,46.61,47.23h22.8Z"
+              transform="translate(-16.52 -15.87)"
+            />
+          </svg>
+          freelance project.
+        </h1>
+        <h3 class="mailto fadeIn2">
+          <a>
+            <div>
+              <span>LEO.CLOT@GODEDU.FR</span>
+            </div>
+          </a>
+        </h3>
+      </div>
+    </main>
+
+    <div class="footer fadeIn2">
+      <div class="link-container">
+        <h3>
+          2020
+        </h3>
+        <ul class="social-link">
+          <li><a href="https://twitter.com/clt_leo" target="_blank"><h3>TWITTER</h3></a></li>
+          <li><a href="https://www.instagram.com/cltleo/" target="_blank"><h3>INSTAGRAM</h3></a></li>
+          <li><a href="https://dribbble.com/DanHen" target="_blank"><h3>DRIBBLE</h3></a></li>
+          <li><a href="https://www.behance.net/DanHen" target="_blank"><h3>BEHANCE</h3></a></li>
+        </ul>
+      </div>
+      <a>
+        <h3>
+          <div class="going-up">
+            <svg
+              class="arrow-up" id="Calque_1" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 57.39 57.39"
+            >
+              <path
+                d="M54.8,35.13A26.44,26.44,0,0,1,47,16.3H43a26.5,26.5,0,0,1-7.87,18.9A26.44,26.44,0,0,1,16.3,43v4A30.51,30.51,0,0,0,38,38a30.71,30.71,0,0,0,5-6.51V73.7h4V31.43A31.23,31.23,0,0,0,52,38,30.43,30.43,0,0,0,73.7,47V43A26.5,26.5,0,0,1,54.8,35.13Z"
+                transform="translate(-16.3 -16.3)"
+              />
+            </svg>
+            GO UP
+          </div>
+        </h3>
+      </a>
+    </div>
+    </div>
+
+    <script src="./src/main.js"></script>
+  </body>
 </html>
