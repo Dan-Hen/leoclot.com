@@ -10,12 +10,12 @@ form, fieldset, input, textarea, p, blockquote, th, td {
 
 @font-face {
   font-family: 'Suisse Int\'l';
-  src: url('../../portfolio/src/typo/SuisseIntl-Book.eot');
-  src: url('../../portfolio/src/typo/SuisseIntl-Book.eot?#iefix') format('embedded-opentype'),
-  url('../../portfolio/src/typo/SuisseIntl-Book.woff2') format('woff2'),
-  url('../../portfolio/src/typo/SuisseIntl-Book.woff') format('woff'),
-  url('../../portfolio/src/typo/SuisseIntl-Book.ttf') format('truetype'),
-  url('../../portfolio/src/typo/SuisseIntl-Book.svg#SuisseIntl-Book') format('svg');
+  src: url('../src/typo/SuisseIntl-Book.eot');
+  src: url('../src/typo/SuisseIntl-Book.eot?#iefix') format('embedded-opentype'),
+  url('../src/typo/SuisseIntl-Book.woff2') format('woff2'),
+  url('../src/typo/SuisseIntl-Book.woff') format('woff'),
+  url('../src/typo/SuisseIntl-Book.ttf') format('truetype'),
+  url('../src/typo/SuisseIntl-Book.svg#SuisseIntl-Book') format('svg');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
