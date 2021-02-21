@@ -29,7 +29,7 @@ function HomeEnter() {
   // Hover an element
   function onMouseHover() {
     TweenMax.to(smallBall, 0.3, {
-      scale: 3
+      scale: 5
     })
   }
 
@@ -416,6 +416,13 @@ function ProjectLeave() {
   gsap.to('.hero-image', {
     top: '30vh',
     transform: 'translateY(-40%)',
+    duration: 0.6,
+    delay: 0.2,
+    ease: 'Power3.easeInOut'
+  })
+  gsap.fromTo('.next', {x: 0, opacity: 1 }, {
+    x: -30,
+    opacity: 0,
     duration: 0.6,
     delay: 0.2,
     ease: 'Power3.easeInOut'

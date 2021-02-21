@@ -169,13 +169,13 @@ nav {
   align-content: center;
   align-items: center;
   justify-content: flex-end;
-  margin: 10px 0px 15px 0px;
+  margin: 50px 0px 50px 0px;
 }
 
 .arrow-right {
   width: 2vw;
   fill: white;
-  margin-right: 5px;
+  margin-right: 20px;
   transform: rotate(90deg);
 
   @media (max-width: 600px) {
@@ -196,6 +196,7 @@ nav {
   position: relative;
   justify-content: space-between;
   align-items: center;
+  margin-top: 15%;
 
   @media (max-width: 600px) {
     margin-top: 50%;
@@ -381,6 +382,19 @@ nav {
   transition: opacity 400ms ease-in;
 }
 
+.underline{
+  stroke: #EC7442;
+  stroke-width: 0.5px;
+  width: 40%;
+  margin-right: -10%;
+  fill: transparent;
+
+  @media (max-width: 600px) {
+    margin-top: 0px;
+    margin-right: -5%;
+  }
+}
+
 #letter {
   margin-top: -16px;
 }
@@ -457,6 +471,10 @@ nav {
   flex-direction: column;
   justify-content: space-between;
   height: 80vh;
+
+  @media (max-width: 600px) {
+    height: auto;
+  }
 }
 
 .landpage-container > h1 {
@@ -512,16 +530,13 @@ nav {
   }
 }
 
-.link a {
-  color: #EC7442;
-}
-
 /* CONTENT */
 
 .row-left,
 .row-full,
+.row-full,
 .row-right {
-  margin: 90px 0 90px 0;
+  margin: 150px 0 150px 0;
 
   @media (max-width: 600px) {
     margin: 10px 0 10px 0;
