@@ -384,14 +384,24 @@ nav {
 
 .underline{
   stroke: #EC7442;
-  stroke-width: 0.5px;
-  width: 40%;
-  margin-right: -10%;
+  stroke-width: 2;
+  position: absolute;
+  width: 175px;
+  right: -45px;
+  top: -22px;
   fill: transparent;
+  stroke-miterlimit: 10;
+  stroke-dasharray: 1250;
+  stroke-dashoffset: 0;
+  animation-name: circle;
+  animation-duration: 1800ms;
+  animation-delay: 900ms;
+  animation-direction: reverse;
 
   @media (max-width: 600px) {
-    margin-top: 0px;
-    margin-right: -5%;
+    width: 68px;
+    right: -10px;
+    top: -6px;
   }
 }
 
@@ -528,6 +538,10 @@ nav {
   @media (max-width: 600px) {
     margin-bottom: 20px;
   }
+}
+
+.link{
+  position: relative;
 }
 
 /* CONTENT */
