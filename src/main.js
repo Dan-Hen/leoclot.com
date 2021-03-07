@@ -1,8 +1,8 @@
-import barba from '@barba/core'
-import { gsap, TweenMax } from 'gsap/all'
-import { ScrollTrigger } from 'gsap/ScrollTrigger'
-import { ScrollToPlugin } from 'gsap/ScrollToPlugin'
-import SplitText from './js/SplitText'
+import barba from '@barba/core';
+import { gsap, TweenMax } from 'gsap/all';
+import { ScrollToPlugin } from 'gsap/ScrollToPlugin';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import SplitText from './js/SplitText';
 
 gsap.registerPlugin(ScrollTrigger)
 gsap.registerPlugin(ScrollToPlugin)
