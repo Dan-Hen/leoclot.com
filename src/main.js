@@ -7,7 +7,7 @@ import SplitText from './js/SplitText'
 gsap.registerPlugin(ScrollTrigger)
 gsap.registerPlugin(ScrollToPlugin)
 
-function HomeEnter() {
+function HomeEnter () {
   const smallBall = document.querySelector('.cursor__ball--small')
   const hoverables = document.querySelectorAll('.hoverable')
 
