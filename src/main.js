@@ -75,6 +75,47 @@ function HomeEnter() {
     ease: 'Power3.easeInOut',
     stagger: 0.4
   }, 0)
+
+  const light = gsap.timeline({
+    onComplete: function () {
+      light.delay(5).restart(true)
+    }
+  })
+  light.fromTo('#rect1', { rotation: +18.05-180, transformOrigin: '50% 50%' }, {
+    duration: 2,
+    delay: 0.5,
+    ease: 'Power3.easeInOut',
+    rotation: -18.05 + 180,
+    transformOrigin: '50% 50%'
+  }, 0)
+  light.fromTo('#rect2', { rotation: +53.3-180, transformOrigin: '50% 50%' }, {
+    duration: 2,
+    delay: 0.5,
+    ease: 'Power3.easeInOut',
+    rotation: -53.3 + 180,
+    transformOrigin: '50% 50%'
+  }, 0)
+  light.fromTo('#rect3', { rotation: 0, transformOrigin: '50% 50%' }, {
+    duration: 2,
+    delay: 0.5,
+    ease: 'Power3.easeInOut',
+    rotation: 180,
+    transformOrigin: '50% 50%'
+  }, 0)
+  light.fromTo('#rect4', { rotation: +36.66, transformOrigin: '50% 50%' }, {
+    duration: 2,
+    delay: 0.5,
+    ease: 'Power3.easeInOut',
+    rotation: -36.66 + 180,
+    transformOrigin: '50% 50%'
+  }, 0)
+  light.fromTo('#rect5', { rotation: +71.94, transformOrigin: '50% 50%' }, {
+    duration: 2,
+    delay: 0.5,
+    ease: 'Power3.easeInOut',
+    rotation: -71.94 + 180,
+    transformOrigin: '50% 50%'
+  }, 0)
 }
 
 function HomeLeave() {
@@ -420,7 +461,7 @@ function ProjectLeave() {
     delay: 0.2,
     ease: 'Power3.easeInOut'
   })
-  gsap.fromTo('.next', {x: 0, opacity: 1 }, {
+  gsap.fromTo('.next', { x: 0, opacity: 1 }, {
     x: -30,
     opacity: 0,
     duration: 0.6,
