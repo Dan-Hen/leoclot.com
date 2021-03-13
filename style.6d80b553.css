@@ -150,13 +150,13 @@ nav {
   align-content: center;
   align-items: center;
   justify-content: flex-end;
-  margin: 10px 0px 15px 0px;
+  margin: 50px 0px 50px 0px;
 }
 
 .arrow-right {
   width: 2vw;
   fill: white;
-  margin-right: 5px;
+  margin-right: 20px;
   transform: rotate(90deg);
 }
 @media (max-width: 600px) {
@@ -178,6 +178,7 @@ nav {
   position: relative;
   justify-content: space-between;
   align-items: center;
+  margin-top: 15%;
 }
 @media (max-width: 600px) {
   .footer {
@@ -303,7 +304,11 @@ nav {
   opacity: 0;
   position: absolute;
   width: 90vw;
+  margin-top: -10vw;
   transition: opacity 100ms ease-in-out;
+}
+.background #unnamed {
+  margin-top: 0vw;
 }
 .background .active {
   opacity: 1;
@@ -360,6 +365,31 @@ nav {
   margin: -31px -15px 0 -31px;
   opacity: 0;
   transition: opacity 400ms ease-in;
+}
+
+.underline {
+  stroke: #EC7442;
+  stroke-width: 2;
+  position: absolute;
+  width: 50%;
+  right: -12%;
+  top: -39%;
+  z-index: -20;
+  fill: transparent;
+  stroke-miterlimit: 10;
+  stroke-dasharray: 1250;
+  stroke-dashoffset: 0;
+  animation-name: circle;
+  animation-duration: 1800ms;
+  animation-delay: 900ms;
+  animation-direction: reverse;
+}
+@media (max-width: 600px) {
+  .underline {
+    width: 68px;
+    right: -10px;
+    top: -6px;
+  }
 }
 
 #letter {
@@ -436,6 +466,11 @@ nav {
   justify-content: space-between;
   height: 80vh;
 }
+@media (max-width: 600px) {
+  .landpage-container {
+    height: auto;
+  }
+}
 
 .landpage-container > h1 {
   justify-content: center;
@@ -447,7 +482,7 @@ nav {
   opacity: 0.7;
   width: 100%;
   z-index: -20;
-  margin-top: 40vh;
+  margin-top: 30vh;
   transform: translateY(-40%);
 }
 
@@ -493,18 +528,20 @@ nav {
   }
 }
 
-.link a {
-  color: #EC7442;
+.link {
+  position: relative;
 }
 
 /* CONTENT */
 .row-left,
 .row-full,
+.row-full,
 .row-right {
-  margin: 90px 0 90px 0;
+  margin: 150px 0 150px 0;
 }
 @media (max-width: 600px) {
   .row-left,
+.row-full,
 .row-full,
 .row-right {
     margin: 10px 0 10px 0;
@@ -613,6 +650,7 @@ nav {
   flex-direction: row;
   margin: 10px 0 10px 0;
   justify-content: space-between;
+  opacity: 1;
 }
 
 .menu-project-list-detail {
@@ -661,6 +699,31 @@ nav {
 }
 .light-mode .hero-image, .light-mode .image-section {
   filter: invert(1) grayscale(100%);
+}
+
+#circle {
+  animation-name: eyeMovement;
+  animation-duration: 10s;
+  animation-delay: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes eyeMovement {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  8% {
+    transform: translate(10px, 2px);
+  }
+  16% {
+    transform: translate(-4px, 3px);
+  }
+  24% {
+    transform: translate(-10px, -3px);
+  }
+  32% {
+    transform: translate(0px, 0px);
+  }
 }
 
 /*# sourceMappingURL=/style.6d80b553.css.map */

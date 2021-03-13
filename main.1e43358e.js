@@ -14952,9 +14952,9 @@ var _core = _interopRequireDefault(require("@barba/core"));
 
 var _all = require("gsap/all");
 
-var _ScrollTrigger = require("gsap/ScrollTrigger");
-
 var _ScrollToPlugin = require("gsap/ScrollToPlugin");
+
+var _ScrollTrigger = require("gsap/ScrollTrigger");
 
 var _SplitText = _interopRequireDefault(require("./js/SplitText"));
 
@@ -14986,7 +14986,7 @@ function HomeEnter() {
 
   function onMouseHover() {
     _all.TweenMax.to(smallBall, 0.3, {
-      scale: 3
+      scale: 5
     });
   }
 
@@ -15040,6 +15040,63 @@ function HomeEnter() {
     delay: 0.6,
     ease: 'Power3.easeInOut',
     stagger: 0.4
+  }, 0);
+
+  var light = _all.gsap.timeline({
+    onComplete: function onComplete() {
+      light.delay(5).restart(true);
+    }
+  });
+
+  light.fromTo('#rect1', {
+    rotation: +18.05 - 180,
+    transformOrigin: '50% 50%'
+  }, {
+    duration: 2,
+    delay: 0.5,
+    ease: 'Power3.easeInOut',
+    rotation: -18.05 + 180,
+    transformOrigin: '50% 50%'
+  }, 0);
+  light.fromTo('#rect2', {
+    rotation: +53.3 - 180,
+    transformOrigin: '50% 50%'
+  }, {
+    duration: 2,
+    delay: 0.5,
+    ease: 'Power3.easeInOut',
+    rotation: -53.3 + 180,
+    transformOrigin: '50% 50%'
+  }, 0);
+  light.fromTo('#rect3', {
+    rotation: 0,
+    transformOrigin: '50% 50%'
+  }, {
+    duration: 2,
+    delay: 0.5,
+    ease: 'Power3.easeInOut',
+    rotation: 180,
+    transformOrigin: '50% 50%'
+  }, 0);
+  light.fromTo('#rect4', {
+    rotation: +36.66,
+    transformOrigin: '50% 50%'
+  }, {
+    duration: 2,
+    delay: 0.5,
+    ease: 'Power3.easeInOut',
+    rotation: -36.66 + 180,
+    transformOrigin: '50% 50%'
+  }, 0);
+  light.fromTo('#rect5', {
+    rotation: +71.94,
+    transformOrigin: '50% 50%'
+  }, {
+    duration: 2,
+    delay: 0.5,
+    ease: 'Power3.easeInOut',
+    rotation: -71.94 + 180,
+    transformOrigin: '50% 50%'
   }, 0);
 }
 
@@ -15449,6 +15506,17 @@ function ProjectLeave() {
     delay: 0.2,
     ease: 'Power3.easeInOut'
   });
+
+  _all.gsap.fromTo('.next', {
+    x: 0,
+    opacity: 1
+  }, {
+    x: -30,
+    opacity: 0,
+    duration: 0.6,
+    delay: 0.2,
+    ease: 'Power3.easeInOut'
+  });
 }
 
 _core.default.init({
@@ -15579,7 +15647,7 @@ _core.default.init({
     }
   }]
 });
-},{"@barba/core":"node_modules/@barba/core/dist/barba.umd.js","gsap/all":"node_modules/gsap/all.js","gsap/ScrollTrigger":"node_modules/gsap/ScrollTrigger.js","gsap/ScrollToPlugin":"node_modules/gsap/ScrollToPlugin.js","./js/SplitText":"src/js/SplitText.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"@barba/core":"node_modules/@barba/core/dist/barba.umd.js","gsap/all":"node_modules/gsap/all.js","gsap/ScrollToPlugin":"node_modules/gsap/ScrollToPlugin.js","gsap/ScrollTrigger":"node_modules/gsap/ScrollTrigger.js","./js/SplitText":"src/js/SplitText.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -15607,7 +15675,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60284" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61233" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
