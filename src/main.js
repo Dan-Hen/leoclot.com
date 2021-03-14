@@ -75,47 +75,6 @@ function HomeEnter () {
     ease: 'Power3.easeInOut',
     stagger: 0.4
   }, 0)
-
-  const light = gsap.timeline({
-    onComplete: function () {
-      light.delay(5).restart(true)
-    }
-  })
-  light.fromTo('#rect1', { rotation: +18.05-180, transformOrigin: '50% 50%' }, {
-    duration: 2,
-    delay: 0.5,
-    ease: 'Power3.easeInOut',
-    rotation: -18.05 + 180,
-    transformOrigin: '50% 50%'
-  }, 0)
-  light.fromTo('#rect2', { rotation: +53.3-180, transformOrigin: '50% 50%' }, {
-    duration: 2,
-    delay: 0.5,
-    ease: 'Power3.easeInOut',
-    rotation: -53.3 + 180,
-    transformOrigin: '50% 50%'
-  }, 0)
-  light.fromTo('#rect3', { rotation: 0, transformOrigin: '50% 50%' }, {
-    duration: 2,
-    delay: 0.5,
-    ease: 'Power3.easeInOut',
-    rotation: 180,
-    transformOrigin: '50% 50%'
-  }, 0)
-  light.fromTo('#rect4', { rotation: +36.66, transformOrigin: '50% 50%' }, {
-    duration: 2,
-    delay: 0.5,
-    ease: 'Power3.easeInOut',
-    rotation: -36.66 + 180,
-    transformOrigin: '50% 50%'
-  }, 0)
-  light.fromTo('#rect5', { rotation: +71.94, transformOrigin: '50% 50%' }, {
-    duration: 2,
-    delay: 0.5,
-    ease: 'Power3.easeInOut',
-    rotation: -71.94 + 180,
-    transformOrigin: '50% 50%'
-  }, 0)
 }
 
 function HomeLeave() {
@@ -190,7 +149,7 @@ function HomeLeave() {
     }, 0)
 }
 
-function HomeScroll() {
+function HomeScroll () {
   gsap.fromTo('.cutline', { width: '0%' }, {
     width: '100%',
     duration: 0.6,
@@ -218,9 +177,49 @@ function HomeScroll() {
     stagger: 0.2,
     scrollTrigger: '.lineChild2'
   })
+  const light = gsap.timeline({
+    onComplete: function () {
+      light.delay(5).restart(true)
+    }
+  })
+  light.fromTo('#rect1', { rotation: +18.05 - 180, transformOrigin: '50% 50%' }, {
+    duration: 2,
+    delay: 0.5,
+    ease: 'Power3.easeInOut',
+    rotation: -18.05 + 180,
+    transformOrigin: '50% 50%'
+  }, 0)
+  light.fromTo('#rect2', { rotation: +53.3 - 180, transformOrigin: '50% 50%' }, {
+    duration: 2,
+    delay: 0.5,
+    ease: 'Power3.easeInOut',
+    rotation: -53.3 + 180,
+    transformOrigin: '50% 50%'
+  }, 0)
+  light.fromTo('#rect3', { rotation: 0, transformOrigin: '50% 50%' }, {
+    duration: 2,
+    delay: 0.5,
+    ease: 'Power3.easeInOut',
+    rotation: 180,
+    transformOrigin: '50% 50%'
+  }, 0)
+  light.fromTo('#rect4', { rotation: +36.66, transformOrigin: '50% 50%' }, {
+    duration: 2,
+    delay: 0.5,
+    ease: 'Power3.easeInOut',
+    rotation: -36.66 + 180,
+    transformOrigin: '50% 50%'
+  }, 0)
+  light.fromTo('#rect5', { rotation: +71.94, transformOrigin: '50% 50%' }, {
+    duration: 2,
+    delay: 0.5,
+    ease: 'Power3.easeInOut',
+    rotation: -71.94 + 180,
+    transformOrigin: '50% 50%'
+  }, 0)
 }
 
-function MenuLaunch() {
+function MenuLaunch () {
   document.getElementById('nav-toggle-text').textContent = 'close'
   document.getElementById('nav-toggle').href = 'javascript:history.back()'
 
@@ -254,11 +253,11 @@ function MenuLaunch() {
     })
 }
 
-function MenuScroll() {
+function MenuScroll () {
 
 }
 
-function MenuLeave() {
+function MenuLeave () {
   document.getElementById('nav-toggle-text').textContent = 'menu'
   document.getElementById('nav-toggle').href = 'menu.html'
 
@@ -293,7 +292,7 @@ function MenuLeave() {
     })
 }
 
-function ProjectLaunch() {
+function ProjectLaunch () {
   gsap.fromTo('.lineChild', {
     y: 100,
     opacity: 0
@@ -325,7 +324,7 @@ function ProjectLaunch() {
   })
 }
 
-function ProjectScroll() {
+function ProjectScroll () {
   gsap.fromTo('.row-right', {
     opacity: 0,
     y: 20,
@@ -385,7 +384,7 @@ function ProjectScroll() {
   })
 }
 
-function ProjectLeave() {
+function ProjectLeave () {
   const projectFade = gsap.timeline()
   projectFade.fromTo('.row-right', { opacity: 1 }, {
     opacity: 0,
@@ -492,7 +491,7 @@ barba.init({
   views: [
     {
       namespace: 'project',
-      beforeEnter({ next }) {
+      beforeEnter ({ next }) {
         let lineParent = new SplitText(next.container.querySelectorAll('.title'), {
           type: 'lines',
           linesClass: 'lineParent'
