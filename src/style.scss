@@ -476,6 +476,10 @@ nav {
   margin-top: 40vh;
   transform: translateY(-40%);
 
+  @media (max-width: 600px) {
+    margin-top: 30vh;
+  }
+
 }
 
 .landpage-container {
