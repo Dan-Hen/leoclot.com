@@ -182,7 +182,7 @@ function HomeScroll () {
       light.delay(5).restart(true)
     }
   })
-  const rects = document.querySelectorAll('#light rect')
+  const rects = document.querySelectorAll('svg.hero-light-icon rect')
 
   const rotationsValues = [
     { from: 18.05 - 180, to: -18.05 + 180 },
