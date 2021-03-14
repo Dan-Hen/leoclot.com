@@ -235,6 +235,7 @@ nav {
   flex-direction: column;
   justify-content: space-between;
   height: 100vh;
+  z-index: 100;
 }
 
 .homepage-project-container {
@@ -561,7 +562,7 @@ nav {
   margin: 150px 0 150px 0;
 
   @media (max-width: 600px) {
-    margin: 10px 0 10px 0;
+    margin: 40px 0 40px 0;
   }
 }
 
