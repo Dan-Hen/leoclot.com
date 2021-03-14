@@ -542,7 +542,7 @@ barba.init({
         function lightMode() {
           const element = document.body
           element.classList.toggle('light-mode')
-          const light = document.getElementByClass('.lightMode')
+          const light = document.querySelector('.lightMode')
           light.classList.toggle('light-mode')
         }
 
