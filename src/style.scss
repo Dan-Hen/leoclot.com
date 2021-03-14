@@ -557,6 +557,7 @@ nav {
 .row-full,
 .row-full,
 .row-right {
+  align-items: flex-start;
   margin: 150px 0 150px 0;
 
   @media (max-width: 600px) {
@@ -566,9 +567,11 @@ nav {
 
 .row-full {
   display: flex;
+  align-items: flex-start;
 
   img {
     width: 100%;
+    height: auto;
   }
 }
 
