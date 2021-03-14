@@ -182,41 +182,20 @@ function HomeScroll () {
       light.delay(5).restart(true)
     }
   })
-  light.fromTo('#rect1', { rotation: +18.05 - 180, transformOrigin: '50% 50%' }, {
-    duration: 2,
-    delay: 0.5,
-    ease: 'Power3.easeInOut',
-    rotation: -18.05 + 180,
-    transformOrigin: '50% 50%'
-  }, 0)
-  light.fromTo('#rect2', { rotation: +53.3 - 180, transformOrigin: '50% 50%' }, {
-    duration: 2,
-    delay: 0.5,
-    ease: 'Power3.easeInOut',
-    rotation: -53.3 + 180,
-    transformOrigin: '50% 50%'
-  }, 0)
-  light.fromTo('#rect3', { rotation: 0, transformOrigin: '50% 50%' }, {
-    duration: 2,
-    delay: 0.5,
-    ease: 'Power3.easeInOut',
-    rotation: 180,
-    transformOrigin: '50% 50%'
-  }, 0)
-  light.fromTo('#rect4', { rotation: +36.66, transformOrigin: '50% 50%' }, {
-    duration: 2,
-    delay: 0.5,
-    ease: 'Power3.easeInOut',
-    rotation: -36.66 + 180,
-    transformOrigin: '50% 50%'
-  }, 0)
-  light.fromTo('#rect5', { rotation: +71.94, transformOrigin: '50% 50%' }, {
-    duration: 2,
-    delay: 0.5,
-    ease: 'Power3.easeInOut',
-    rotation: -71.94 + 180,
-    transformOrigin: '50% 50%'
-  }, 0)
+  const rects = document.querySelectorAll('#light rect')
+
+  const rotationsValues = [
+    { from: 18.05 - 180, to: -18.05 + 180 },
+    { from: 53.3 - 180, to: -53.3 + 180 },
+    { from: 0, to: 180 },
+    { from: 36.66, to: -36.66 + 180 },
+    { from: 71.94, to: -71.94 + 180 }
+  ]
+  rects.forEach((rect, i) => {
+    light.fromTo(rect,
+      { rotation: rotationsValues[i].from, transformOrigin: '50% 50%' },
+      { rotation: rotationsValues[i].to, transformOrigin: '50% 50%', duration: 2, delay: 0.5, ease: 'Power3.easeInOut' }, 0)
+  })
 }
 
 function MenuLaunch () {
