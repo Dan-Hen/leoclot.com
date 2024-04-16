@@ -189,7 +189,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./typo/SuisseIntl-Book.eot":[["SuisseIntl-Book.7d5bdaa6.eot","src/typo/SuisseIntl-Book.eot"],"src/typo/SuisseIntl-Book.eot"],"./typo/SuisseIntl-Book.woff2":[["SuisseIntl-Book.b52bd641.woff2","src/typo/SuisseIntl-Book.woff2"],"src/typo/SuisseIntl-Book.woff2"],"./typo/SuisseIntl-Book.woff":[["SuisseIntl-Book.9dd89df0.woff","src/typo/SuisseIntl-Book.woff"],"src/typo/SuisseIntl-Book.woff"],"./typo/SuisseIntl-Book.ttf":[["SuisseIntl-Book.5897d38f.ttf","src/typo/SuisseIntl-Book.ttf"],"src/typo/SuisseIntl-Book.ttf"],"./typo/SuisseIntl-Book.svg":[["SuisseIntl-Book.a04451d8.svg","src/typo/SuisseIntl-Book.svg"],"src/typo/SuisseIntl-Book.svg"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -217,7 +217,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "65111" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63566" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
