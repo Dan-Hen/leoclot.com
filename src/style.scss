@@ -9,8 +9,8 @@ form, fieldset, input, textarea, p, blockquote, th, td {
 
 body {
   font-family: "Roboto Flex", sans-serif;
-  background-color: black;
-  color: white;
+  background-color: rgb(199, 199, 199);
+  color: rgb(48, 48, 48);
   display: block;
   width: 100%;
   margin: 0 auto;
@@ -42,7 +42,8 @@ li {
 }
 
 a {
-  color: white;
+  color: rgb(134, 134, 134);
+
 }
 
 a:link {
@@ -54,7 +55,7 @@ a:visited {
 }
 
 a:hover {
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 a:active {
@@ -66,8 +67,6 @@ button {
   border: none;
   outline: none;
 }
-
-/* HOME */
 
 .home{
   width: 100%;
@@ -92,7 +91,7 @@ button {
 }
 
 .highlight{
-  color: #EFF32C;
+  color: #000000;
 }
 
 .footer{
@@ -115,10 +114,15 @@ ul {
 }
 
 img {
+  border-radius: 10px;
   width: 338px;
   height: 100%;
   max-height: 100%;
   min-width: 100%;
   object-fit: cover;
   vertical-align: bottom;
+}
+
+.link{
+  margin-top: 10px;
 }
